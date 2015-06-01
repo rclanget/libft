@@ -6,14 +6,13 @@
 /*   By: ulefebvr <ulefebvr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/07 17:44:28 by ulefebvr          #+#    #+#             */
-/*   Updated: 2015/02/20 17:18:11 by rclanget         ###   ########.fr       */
+/*   Updated: 2015/03/30 16:01:47 by rclanget         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <stdlib.h>
 
-int		ft_xcolums(char const *s, char c)
+static int		ft_xcolums(char const *s, char c)
 {
 	int i;
 	int a;
@@ -48,7 +47,7 @@ char	**ft_strsplit(char const *s, char c)
 	tab = (char**)malloc(sizeof(char*) * ft_xcolums(s, c) + 1);
 	if (!tab)
 		return (NULL);
-	tab[ft_xcolums(s, c)] = '\0';
+	tab[ft_xcolums(s, c)] = 0;
 	while (s[i])
 	{
 		len = 0;

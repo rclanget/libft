@@ -6,7 +6,7 @@
 #    By: rclanget <rclanget@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2014/11/11 11:34:51 by rclanget          #+#    #+#              #
-#    Updated: 2015/02/19 13:01:00 by rclanget         ###   ########.fr        #
+#    Updated: 2015/06/01 15:25:11 by rclanget         ###   ########.fr        #
 #                                                                              #
 #******************************************************************************#
 
@@ -23,7 +23,8 @@ SRC = ft_isprint.c ft_putnbr.c ft_strjoin.c	ft_strtrim.c ft_itoa.c \
 	ft_strsplit.c ft_memdel.c ft_memmove.c ft_strdel.c ft_strequ.c \
 	ft_striteri.c ft_strmapi.c ft_strnequ.c ft_strsub.c ft_putchar_fd.c \
 	ft_strrev.c ft_lstmap.c ft_lstiter.c ft_lstadd.c ft_lstdel.c \
-	ft_lstdelone.c ft_lstnew.c ft_strjoin_woc.c get_next_line.c
+	ft_lstdelone.c ft_lstnew.c ft_strjoin_woc.c get_next_line.c \
+	ft_escape.c ft_isspace.c
 
 OFILE = ft_isprint.o ft_putnbr.o ft_strjoin.o ft_strtrim.o ft_itoa.o \
     ft_putnbr_fd.o ft_strlcat.o ft_tolower.o ft_memccpy.o ft_putstr.o \
@@ -36,7 +37,8 @@ OFILE = ft_isprint.o ft_putnbr.o ft_strjoin.o ft_strtrim.o ft_itoa.o \
 	ft_strsplit.o ft_memdel.o ft_memmove.o ft_strdel.o ft_strequ.o \
     ft_striteri.o ft_strmapi.o ft_strnequ.o ft_strsub.o ft_memalloc.o \
     ft_strrev.o ft_lstmap.o ft_lstiter.o ft_lstadd.o ft_lstdel.o \
-	ft_lstdelone.o ft_lstnew.o ft_strjoin_woc.o get_next_line.o
+	ft_lstdelone.o ft_lstnew.o ft_strjoin_woc.o get_next_line.o \
+	ft_escape.o ft_isspace.o
     
 FLAGS = -Wall -Wextra -Werror
 
