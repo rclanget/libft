@@ -1,32 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_escape.c                                        :+:      :+:    :+:   */
+/*   ft_strcpy.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rclanget <rclanget@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/06/01 15:23:11 by rclanget          #+#    #+#             */
-/*   Updated: 2015/06/01 15:23:13 by rclanget         ###   ########.fr       */
+/*   Created: 2014/11/03 18:42:33 by rclanget          #+#    #+#             */
+/*   Updated: 2014/11/04 10:49:12 by rclanget         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "libft.h"
 
-char *ft_escape(char *s)
+char *ft_strcpy(char *dest, const char *src)
 {
-	static char	buf[0x1000];
-	char		*p;
-	size_t		len;
+	char *p;
 
-	len = ft_strlen(s) - 1;
-	ft_bzero((void *)buf, 0x1000);
-	while (ft_isspace(*(s + len)))
-		*(s + len--) = 0;
-	while (ft_isspace(*s))
-		s++;
-	p = buf;
-	while (*s++)
-		if (!ft_isspace(*(s - 1)) || (ft_isspace(*(s - 1)) && !ft_isspace(*s)))
-			*p++ = *(s - 1);
-	return (buf);
+	if ((p = dest) == NULL)
+		return (NULL);
+	while ((*p++ = *src++) != 0)
+		continue ;
+	return (dest);
 }

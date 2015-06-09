@@ -1,41 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strstr.c                                        :+:      :+:    :+:   */
+/*   ft_strdup.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rclanget <rclanget@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/07 10:17:15 by rclanget          #+#    #+#             */
-/*   Updated: 2014/12/30 20:25:34 by rclanget         ###   ########.fr       */
+/*   Created: 2014/11/03 16:04:15 by rclanget          #+#    #+#             */
+/*   Updated: 2014/11/12 16:26:24 by rclanget         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strstr(const char *s1, const char *s2)
+char *ft_strdup(const char *s1)
 {
-	int		i;
-	size_t	j;
-	int		k;
+	char *s2;
 
-	i = 0;
-	j = 0;
-	if (s2[i] == '\0')
-		return ((char *)&s1[i]);
-	while (s1[i])
-	{
-		if (*s2 == '\0')
-			return ((char *)s1);
-		if (s1[i] == s2[j])
-		{
-			k = i;
-			while (s2[j] && s1[k++] == s2[j])
-				j++;
-			if (j == ft_strlen(s2))
-				return ((char *)s1 + i);
-		}
-		j = 0;
-		i++;
-	}
-	return (NULL);
+	if ((s2 = (char *)malloc((sizeof(char) * ft_strlen(s1)) + 1)) == NULL)
+		return (NULL);
+	return (ft_strcpy(s2, s1));
 }

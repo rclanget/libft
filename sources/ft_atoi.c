@@ -1,24 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_lstadd.c                                        :+:      :+:    :+:   */
+/*   ft_atoi.c                                          :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rclanget <rclanget@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/01/02 20:56:29 by rclanget          #+#    #+#             */
-/*   Updated: 2015/02/15 19:19:19 by rclanget         ###   ########.fr       */
+/*   Created: 2014/11/10 16:45:28 by rclanget          #+#    #+#             */
+/*   Updated: 2014/12/14 11:06:03 by rclanget         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_lstadd(t_list **alst, t_list *new)
+int ft_atoi(const char *str)
 {
-	if (new)
+	int value;
+	int positive;
+	int i;
+
+	value = 0;
+	while (*str == ' ' || *str == '\n' || *str == '\t' || *str == '\f'
+		|| *str == '\v' || *str == '\r')
+		str++;
+	positive = (*str == '-') ? -1 : 1;
+	if (*str == '-' || *str == '+')
+		str++;
+	while (*str && ft_isdigit(*str))
 	{
-		if (!(alst))
-			*alst = new;
-		new->next = *alst;
-		*alst = new;
+		i = (int)(*str - 48);
+		value = (value * 10) + i;
+		str++;
 	}
+	return (value * positive);
 }

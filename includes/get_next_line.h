@@ -1,27 +1,24 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strnew.c                                        :+:      :+:    :+:   */
+/*   get_next_line.h                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: rclanget <rclanget@student.42.fr>          +#+  +:+       +#+        */
+/*   By: ulefebvr <ulefebvr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/07 14:53:17 by rclanget          #+#    #+#             */
-/*   Updated: 2014/12/30 20:42:27 by rclanget         ###   ########.fr       */
+/*   Created: 2015/01/13 15:20:57 by ulefebvr          #+#    #+#             */
+/*   Updated: 2015/01/13 15:20:57 by ulefebvr         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
+#ifndef GET_NEXT_LINE_H
+# define GET_NEXT_LINE_H
 
-char *ft_strnew(size_t size)
-{
-	char	*str;
-	int		i;
+# define BUFF_SIZE 42
 
-	i = 0;
-	str = (char *)malloc(sizeof(char) * size + 1);
-	if (str == NULL)
-		return (NULL);
-	while (i < (int)size)
-		str[i++] = '\0';
-	return (str);
-}
+# include <stdlib.h>
+# include <unistd.h>
+# include "libft.h"
+
+int get_next_line(int fd, char **line);
+
+#endif

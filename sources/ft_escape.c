@@ -1,21 +1,32 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isalpha.c                                       :+:      :+:    :+:   */
+/*   ft_escape.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rclanget <rclanget@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/04 18:11:25 by rclanget          #+#    #+#             */
-/*   Updated: 2014/11/04 18:20:25 by rclanget         ###   ########.fr       */
+/*   Created: 2015/06/01 15:23:11 by rclanget          #+#    #+#             */
+/*   Updated: 2015/06/01 15:23:13 by rclanget         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isalpha(int c)
+char *ft_escape(char *s)
 {
-	if ((c > 64 && c < 91) || (c > 96 && c < 123))
-		return (1);
-	else
-		return (0);
+	static char	buf[0x1000];
+	char		*p;
+	size_t		len;
+
+	len = ft_strlen(s) - 1;
+	ft_bzero((void *)buf, 0x1000);
+	while (ft_isspace(*(s + len)))
+		*(s + len--) = 0;
+	while (ft_isspace(*s))
+		s++;
+	p = buf;
+	while (*s++)
+		if (!ft_isspace(*(s - 1)) || (ft_isspace(*(s - 1)) && !ft_isspace(*s)))
+			*p++ = *(s - 1);
+	return (buf);
 }

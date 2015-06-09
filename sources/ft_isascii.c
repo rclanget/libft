@@ -1,20 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_isspace.c                                       :+:      :+:    :+:   */
+/*   ft_isascii.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rclanget <rclanget@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2015/06/01 15:18:16 by rclanget          #+#    #+#             */
-/*   Updated: 2015/06/01 15:18:25 by rclanget         ###   ########.fr       */
+/*   Created: 2014/11/07 09:56:07 by rclanget          #+#    #+#             */
+/*   Updated: 2014/11/07 10:15:28 by rclanget         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "includes/libft.h"
+#include "libft.h"
 
-int		ft_isspace(int c)
+int ft_isascii(int c)
 {
-	if (c == '\f')
-		return (1);
-	return (c == ' ' || c == '\t' || c == '\r' || c == '\n' || c == '\v');
+	return(c >= 0 && c <= 127);
 }

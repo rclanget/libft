@@ -1,27 +1,41 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_bzero.c                                         :+:      :+:    :+:   */
+/*   ft_strstr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rclanget <rclanget@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/06 11:41:54 by rclanget          #+#    #+#             */
-/*   Updated: 2014/11/06 11:57:20 by rclanget         ###   ########.fr       */
+/*   Created: 2014/11/07 10:17:15 by rclanget          #+#    #+#             */
+/*   Updated: 2014/12/30 20:25:34 by rclanget         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_bzero(void *s, size_t n)
+char *ft_strstr(const char *s1, const char *s2)
 {
-	char	*str;
-	size_t	i;
+	int		i;
+	size_t	j;
+	int		k;
 
-	str = (char *)s;
 	i = 0;
-	while (i < n)
+	j = 0;
+	if (s2[i] == 0)
+		return ((char *)s1 + i);
+	while (s1[i])
 	{
-		str[i] = '\0';
+		if (*s2 == 0)
+			return ((char *)s1);
+		if (s1[i] == s2[j])
+		{
+			k = i;
+			while (s2[j] && s1[k++] == s2[j])
+				j++;
+			if (j == ft_strlen(s2))
+				return ((char *)s1 + i);
+		}
+		j = 0;
 		i++;
 	}
+	return (NULL);
 }

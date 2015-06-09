@@ -1,23 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_strdup.c                                        :+:      :+:    :+:   */
+/*   ft_strnew.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rclanget <rclanget@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/03 16:04:15 by rclanget          #+#    #+#             */
-/*   Updated: 2014/11/12 16:26:24 by rclanget         ###   ########.fr       */
+/*   Created: 2014/11/07 14:53:17 by rclanget          #+#    #+#             */
+/*   Updated: 2014/12/30 20:42:27 by rclanget         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strdup(const char *s1)
+char *ft_strnew(size_t size)
 {
-	char *s2;
-
-	s2 = (char *)malloc((sizeof(char) * ft_strlen(s1)) + 1);
-	if (s2 == NULL)
-		return (NULL);
-	return (ft_strcpy(s2, s1));
+	return ((char *)ft_memalloc(size));
 }

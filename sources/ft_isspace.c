@@ -1,25 +1,20 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putstr.c                                        :+:      :+:    :+:   */
+/*   ft_isspace.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: rclanget <rclanget@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2014/11/05 18:42:57 by rclanget          #+#    #+#             */
-/*   Updated: 2014/11/05 18:44:01 by rclanget         ###   ########.fr       */
+/*   Created: 2015/06/01 15:18:16 by rclanget          #+#    #+#             */
+/*   Updated: 2015/06/08 22:34:21 by rclanget         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putstr(char const *s)
+int		ft_isspace(int c)
 {
-	int i;
-
-	i = 0;
-	while (s[i])
-	{
-		ft_putchar(s[i]);
-		i++;
-	}
+	if (c == '\f')
+		return (1);
+	return (c == ' ' || c == '\t' || c == '\r' || c == '\n' || c == '\v');
 }
