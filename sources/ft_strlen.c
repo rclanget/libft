@@ -6,7 +6,7 @@
 /*   By: rclanget <rclanget@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/03 15:27:02 by rclanget          #+#    #+#             */
-/*   Updated: 2014/11/12 16:25:20 by rclanget         ###   ########.fr       */
+/*   Updated: 2015/06/14 17:40:29 by rclanget         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,12 +14,5 @@
 
 size_t ft_strlen(const char *s)
 {
-	int i;
-
-	i = 0;
-	if (s == NULL)
-		return (0);
-	while (s[i])
-		i++;
-	return (i);
+	return (*s++ ? 1 + ft_strlen(s) : 0);
 }
