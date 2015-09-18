@@ -6,13 +6,13 @@
 /*   By: rclanget <rclanget@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 18:42:57 by rclanget          #+#    #+#             */
-/*   Updated: 2014/11/05 18:44:01 by rclanget         ###   ########.fr       */
+/*   Updated: 2015/09/18 15:30:03 by rclanget         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putstr(char const *s)
+void	ft_putstr(char const *s)
 {
 	int i;
 

@@ -6,13 +6,13 @@
 /*   By: rclanget <rclanget@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/07 09:56:07 by rclanget          #+#    #+#             */
-/*   Updated: 2015/06/09 16:00:33 by rclanget         ###   ########.fr       */
+/*   Updated: 2015/09/18 15:23:51 by rclanget         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isascii(int c)
+int	ft_isascii(int c)
 {
 	return (c >= 0 && c <= 127);
 }

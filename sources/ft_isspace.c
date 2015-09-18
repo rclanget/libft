@@ -6,13 +6,13 @@
 /*   By: rclanget <rclanget@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/06/01 15:18:16 by rclanget          #+#    #+#             */
-/*   Updated: 2015/06/08 22:34:21 by rclanget         ###   ########.fr       */
+/*   Updated: 2015/09/18 15:24:28 by rclanget         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int		ft_isspace(int c)
+int	ft_isspace(int c)
 {
 	if (c == '\f')
 		return (1);

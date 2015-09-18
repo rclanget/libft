@@ -6,13 +6,13 @@
 /*   By: rclanget <rclanget@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/10 10:35:17 by rclanget          #+#    #+#             */
-/*   Updated: 2014/11/10 13:50:08 by rclanget         ###   ########.fr       */
+/*   Updated: 2015/09/18 15:27:57 by rclanget         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_memmove(void *dest, const void *src, size_t n)
+void	*ft_memmove(void *dest, const void *src, size_t n)
 {
 	char		*tmp_dest;
 	const char	*tmp_src;

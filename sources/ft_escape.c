@@ -6,13 +6,13 @@
 /*   By: rclanget <rclanget@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/06/01 15:23:11 by rclanget          #+#    #+#             */
-/*   Updated: 2015/06/01 15:23:13 by rclanget         ###   ########.fr       */
+/*   Updated: 2015/09/18 15:23:17 by rclanget         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_escape(char *s)
+char	*ft_escape(char *s)
 {
 	static char	buf[0x1000];
 	char		*p;

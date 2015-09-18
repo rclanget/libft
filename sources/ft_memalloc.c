@@ -6,13 +6,13 @@
 /*   By: rclanget <rclanget@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/10 15:08:41 by rclanget          #+#    #+#             */
-/*   Updated: 2014/11/15 10:28:45 by rclanget         ###   ########.fr       */
+/*   Updated: 2015/09/18 15:26:45 by rclanget         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_memalloc(size_t size)
+void	*ft_memalloc(size_t size)
 {
 	void *mem;
 	char *str;

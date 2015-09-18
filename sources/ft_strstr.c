@@ -6,13 +6,13 @@
 /*   By: rclanget <rclanget@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/07 10:17:15 by rclanget          #+#    #+#             */
-/*   Updated: 2014/12/30 20:25:34 by rclanget         ###   ########.fr       */
+/*   Updated: 2015/09/18 15:36:15 by rclanget         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strstr(const char *s1, const char *s2)
+char	*ft_strstr(const char *s1, const char *s2)
 {
 	int		i;
 	size_t	j;

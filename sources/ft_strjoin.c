@@ -6,13 +6,13 @@
 /*   By: rclanget <rclanget@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/07 15:46:20 by rclanget          #+#    #+#             */
-/*   Updated: 2014/11/15 10:53:10 by rclanget         ###   ########.fr       */
+/*   Updated: 2015/09/18 15:33:04 by rclanget         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strjoin(char const *s1, char const *s2)
+char	*ft_strjoin(char const *s1, char const *s2)
 {
 	char			*dst;
 	int				l_s3;

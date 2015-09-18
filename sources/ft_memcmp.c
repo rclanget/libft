@@ -6,13 +6,13 @@
 /*   By: rclanget <rclanget@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/06 19:57:00 by rclanget          #+#    #+#             */
-/*   Updated: 2014/12/30 17:10:28 by rclanget         ###   ########.fr       */
+/*   Updated: 2015/09/18 15:27:26 by rclanget         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_memcmp(const void *s1, const void *s2, size_t n)
+int	ft_memcmp(const void *s1, const void *s2, size_t n)
 {
 	const char *tmp_s1;
 	const char *tmp_s2;

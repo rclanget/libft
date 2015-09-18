@@ -6,13 +6,13 @@
 /*   By: rclanget <rclanget@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/13 17:52:52 by rclanget          #+#    #+#             */
-/*   Updated: 2015/06/08 12:45:23 by rclanget         ###   ########.fr       */
+/*   Updated: 2015/09/18 15:36:33 by rclanget         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strtrim(char const *s)
+char	*ft_strtrim(char const *s)
 {
 	int		start;
 	int		end;

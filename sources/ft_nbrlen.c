@@ -6,13 +6,13 @@
 /*   By: ulefebvr <ulefebvr@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/01/07 18:35:39 by ulefebvr          #+#    #+#             */
-/*   Updated: 2015/01/07 18:35:39 by ulefebvr         ###   ########.fr       */
+/*   Updated: 2015/09/18 15:28:17 by rclanget         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_nbrlen(int n)
+int	ft_nbrlen(int n)
 {
 	int i;
 

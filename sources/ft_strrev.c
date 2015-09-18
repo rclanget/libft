@@ -6,13 +6,13 @@
 /*   By: rclanget <rclanget@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/12/16 10:24:12 by rclanget          #+#    #+#             */
-/*   Updated: 2014/12/16 10:24:13 by rclanget         ###   ########.fr       */
+/*   Updated: 2015/09/18 15:35:45 by rclanget         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *strrev(char *str)
+char	*strrev(char *str)
 {
 	int		i;
 	int		j;

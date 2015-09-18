@@ -6,13 +6,13 @@
 /*   By: rclanget <rclanget@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 18:03:24 by rclanget          #+#    #+#             */
-/*   Updated: 2014/11/05 18:12:47 by rclanget         ###   ########.fr       */
+/*   Updated: 2015/09/18 15:36:56 by rclanget         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_toupper(int c)
+int	ft_toupper(int c)
 {
 	if (c <= 122 && c >= 97)
 		return (c - 32);

@@ -6,13 +6,13 @@
 /*   By: rclanget <rclanget@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/05 18:45:22 by rclanget          #+#    #+#             */
-/*   Updated: 2014/11/05 18:47:19 by rclanget         ###   ########.fr       */
+/*   Updated: 2015/09/18 15:29:11 by rclanget         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void ft_putendl(char const *s)
+void	ft_putendl(char const *s)
 {
 	int i;
 

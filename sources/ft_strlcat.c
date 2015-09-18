@@ -6,13 +6,13 @@
 /*   By: rclanget <rclanget@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/04 11:29:09 by rclanget          #+#    #+#             */
-/*   Updated: 2014/11/15 10:31:38 by rclanget         ###   ########.fr       */
+/*   Updated: 2015/09/18 15:33:23 by rclanget         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t ft_strlcat(char *dest, const char *src, size_t n)
+size_t	ft_strlcat(char *dest, const char *src, size_t n)
 {
 	size_t len_dest;
 	size_t len_src;

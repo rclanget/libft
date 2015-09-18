@@ -6,13 +6,13 @@
 /*   By: rclanget <rclanget@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/06 14:33:02 by rclanget          #+#    #+#             */
-/*   Updated: 2014/11/12 16:57:38 by rclanget         ###   ########.fr       */
+/*   Updated: 2015/09/18 15:26:57 by rclanget         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_memccpy(void *dest, const void *src, int c, size_t n)
+void	*ft_memccpy(void *dest, const void *src, int c, size_t n)
 {
 	unsigned char	*strdest;
 	unsigned char	*strsrc;

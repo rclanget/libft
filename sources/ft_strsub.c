@@ -6,13 +6,13 @@
 /*   By: rclanget <rclanget@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/10 15:31:35 by rclanget          #+#    #+#             */
-/*   Updated: 2014/11/16 12:33:37 by rclanget         ###   ########.fr       */
+/*   Updated: 2015/09/18 15:36:23 by rclanget         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strsub(char const *s, unsigned int start, size_t len)
+char	*ft_strsub(char const *s, unsigned int start, size_t len)
 {
 	char	*dest;
 	size_t	i;

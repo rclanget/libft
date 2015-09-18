@@ -91,4 +91,6 @@ char				*ft_escape(char *s);
 int					ft_isspace(int c);
 char				**ft_strsplit_custom(char const *s, char c, char keep);
 int					get_next_line(int fd, char **line);
+int					ft_option(int ac, char **av, const char *list, int *option);
+
 #endif
