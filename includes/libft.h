@@ -94,5 +94,6 @@ int					get_next_line(int fd, char **line);
 int					ft_option(int ac, char **av, const char *list, int *option);
 void				*ft_freetab(char **tab);
 int					ft_tablen(char **tab);
+int					ft_is_tab_digit(char **tab);
 
 #endif
