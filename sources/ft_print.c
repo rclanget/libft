@@ -42,5 +42,16 @@ void	ft_fdprint(int fd, const char *fmt, ...)
 
 void	ft_print(const char *fmt, ...)
 {
-	ft_fdprint(1, fmt, ...);
+	va_list ap;
+
+	va_start(ap, fmt);
+	while (fmt && *fmt)
+	{
+		if (*fmt == '%')
+			print_arg(ap, ++fmt, 1);
+		else
+			write(1, fmt, 1);
+		fmt++;
+	}
+	va_end(ap);	
 }
