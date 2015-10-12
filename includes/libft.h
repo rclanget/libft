@@ -95,5 +95,7 @@ int					ft_option(int ac, char **av, const char *list, int *option);
 void				*ft_freetab(char **tab);
 int					ft_tablen(char **tab);
 int					ft_is_tab_digit(char **tab);
+void				ft_print(const char *fmt, ...);
+void				ft_fdprint(int fd, const char *fmt, ...);
 
 #endif

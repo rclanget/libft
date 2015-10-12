@@ -12,9 +12,17 @@
 
 #include <unistd.h>
 
-static int	ft_pow(int i, int exposant)
+static int	ft_pow(int exposant)
 {
-	return ((exposant == 0) ? i * ft_pow(i, --exposant) : 1);
+	int i;
+
+	i = 1;
+	while (exposant)
+	{
+		i = i << 1;
+		exposant--;
+	}
+	return (i);
 }
 
 static void	ft_option_error(char *prog, char c)
@@ -40,7 +48,7 @@ static int	ft_mark_option(char **av, const char *list, int *opt, char *str)
 		list = s;
 		while (*list)
 		{
-			if (*list == *str && (*opt |= ft_pow(2, list - s)))
+			if (*list == *str && (*opt |= ft_pow(list - s)))
 				break ;
 			list++;
 		}
