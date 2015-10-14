@@ -37,7 +37,7 @@ void	ft_fdprint(int fd, const char *fmt, ...)
 			write(fd, fmt, 1);
 		fmt++;
 	}
-	va_end(ap);	
+	va_end(ap);
 }
 
 void	ft_print(const char *fmt, ...)
@@ -53,5 +53,5 @@ void	ft_print(const char *fmt, ...)
 			write(1, fmt, 1);
 		fmt++;
 	}
-	va_end(ap);	
+	va_end(ap);
 }
