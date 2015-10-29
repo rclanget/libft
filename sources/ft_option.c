@@ -6,7 +6,7 @@
 /*   By: rclanget <rclanget@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2015/09/18 15:28:28 by rclanget          #+#    #+#             */
-/*   Updated: 2015/09/18 15:28:33 by rclanget         ###   ########.fr       */
+/*   Updated: 2015/10/28 18:49:33 by rclanget         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -53,7 +53,10 @@ static int	ft_mark_option(char **av, const char *list, int *opt, char *str)
 			list++;
 		}
 		if (!*list)
-			return (ft_option_error(av[0], *str), 0);
+		{
+			ft_option_error(av[0], *str);
+			return (0);
+		}
 		str++;
 	}
 	return (1);
@@ -88,6 +91,9 @@ int			ft_option(int ac, char **av, const char *list, int *option)
 	while (*list)
 		list++;
 	if (list - s >= 32)
-		return (write(2, "Error : Too many option\n", 24), -1);
+	{
+		write(2, "Error : Too many option\n", 24);
+		return (-1);
+	}
 	return (ft_get_option(av, s, option));
 }
