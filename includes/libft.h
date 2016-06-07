@@ -94,5 +94,6 @@ int					get_next_line(int fd, char **line);
 int					ft_option(int ac, char **av, const char *list, int *option);
 void				ft_print(const char *fmt, ...);
 void				ft_fdprint(int fd, const char *fmt, ...);
+int				ft_isupper(char c);
 
 #endif
