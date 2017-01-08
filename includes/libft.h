@@ -6,7 +6,7 @@
 /*   By: rclanget <rclanget@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2014/11/10 20:53:57 by rclanget          #+#    #+#             */
-/*   Updated: 2015/10/20 16:02:14 by rclanget         ###   ########.fr       */
+/*   Updated: 2017/01/08 20:01:07 by rclanget         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -94,6 +94,6 @@ int					get_next_line(int fd, char **line);
 int					ft_option(int ac, char **av, const char *list, int *option);
 void				ft_print(const char *fmt, ...);
 void				ft_fdprint(int fd, const char *fmt, ...);
-int				ft_isupper(char c);
+int					ft_isupper(char c);
 
 #endif
